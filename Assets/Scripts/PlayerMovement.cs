@@ -48,7 +48,8 @@ public class PlayerMovement : MonoBehaviour
         {
             _rb2d.velocity = new Vector2(_rb2d.velocity.x, jumpSpeed);
         }
-
+        
+        
         if (CheckGround.IsGrounded == false)
         {
             animator.SetBool("Jump", true);
